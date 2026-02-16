@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🎉 Surprise 🎉</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: #333;
+        }
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            background: #ff6b6b;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #ff4757;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>🎂 Hey! Click the button 👇</h1>
+    <button onclick="showWish()">Open Surprise</button>
+    <h2 id="message"></h2>
+</div>
+
+<script>
+function showWish() {
+    document.getElementById("message").innerHTML =
+        "Happy Birthday 🎉🎂<br>May your life be full of success, happiness & zero bugs 🚀";
+}
+</script>
+
+</body>
+</html>
